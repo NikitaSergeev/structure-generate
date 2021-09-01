@@ -1,0 +1,15 @@
+{
+    "name": "schema-generate/structure-generate",
+    "autoload": {
+        "psr-4": {
+            "SchemaGenerate\\StructureGenerate\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Nikita Sergeev",
+            "email": "scorp4646@yandex.ru"
+        }
+    ],
+    "require": {}
+}
