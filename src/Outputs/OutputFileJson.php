@@ -1,6 +1,6 @@
 <?php
 
-namespace NikitaSergeev\StructureGenerate\Outputs;
+namespace  SchemaGenerate\StructureGenerate\Outputs;
 
 class OutputFileJson extends OutputAbstract
 {

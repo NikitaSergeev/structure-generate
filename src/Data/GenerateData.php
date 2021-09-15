@@ -1,6 +1,6 @@
 <?php
 
-namespace NikitaSergeev\StructureGenerate\Data;
+namespace  SchemaGenerate\StructureGenerate\Data;
 
 class GenerateData implements Data
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace NikitaSergeev\StructureGenerate\Generators;
+namespace  SchemaGenerate\StructureGenerate\Generators;
 
-use NikitaSergeev\StructureGenerate\Data\Data;
-use NikitaSergeev\StructureGenerate\Data\GenerateData;
-use NikitaSergeev\StructureGenerate\Outputs\Output;
-use NikitaSergeev\StructureGenerate\Outputs\OutputRaw;
-use NikitaSergeev\StructureGenerate\Parsers\ParserStructure;
-use NikitaSergeev\StructureGenerate\Schemes\Schema;
+use  SchemaGenerate\StructureGenerate\Data\Data;
+use  SchemaGenerate\StructureGenerate\Data\GenerateData;
+use  SchemaGenerate\StructureGenerate\Outputs\Output;
+use  SchemaGenerate\StructureGenerate\Outputs\OutputRaw;
+use  SchemaGenerate\StructureGenerate\Parsers\ParserStructure;
+use  SchemaGenerate\StructureGenerate\Schemes\Schema;
 
 class GeneratorService implements Generator
 {

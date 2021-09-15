@@ -1,8 +1,8 @@
 <?php
 
-namespace NikitaSergeev\StructureGenerate\Outputs;
+namespace  SchemaGenerate\StructureGenerate\Outputs;
 
-use NikitaSergeev\StructureGenerate\Data\GenerateData;
+use  SchemaGenerate\StructureGenerate\Data\GenerateData;
 
 abstract class OutputAbstract implements Output
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace NikitaSergeev\StructureGenerate\Parsers;
+namespace  SchemaGenerate\StructureGenerate\Parsers;
 
 use Faker\Generator;
 

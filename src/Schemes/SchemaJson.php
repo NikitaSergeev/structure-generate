@@ -1,6 +1,6 @@
 <?php
 
-namespace NikitaSergeev\StructureGenerate\Schemes;
+namespace  SchemaGenerate\StructureGenerate\Schemes;
 
 class SchemaJson implements Schema
 {

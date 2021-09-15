@@ -1,9 +1,9 @@
 {
   "name": "nikitasergeev/structure-generate",
   "autoload": {
-    "psr-4": {
-      "NikitaSergeev\\StructureGenerate\\": "./src/"
-    }
+    "classmap": [
+      "src/"
+    ]
   },
   "autoload-dev": {
     "classmap": [
@@ -24,12 +24,5 @@
   },
   "scripts": {
     "test": "phpunit"
-  },
-  "config": {
-    "preferred-install": "dist",
-    "sort-packages": true,
-    "optimize-autoloader": true
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true
+  }
 }

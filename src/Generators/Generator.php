@@ -1,11 +1,11 @@
 <?php
 
-namespace NikitaSergeev\StructureGenerate\Generators;
+namespace  SchemaGenerate\StructureGenerate\Generators;
 
-use NikitaSergeev\StructureGenerate\Data\Data;
-use NikitaSergeev\StructureGenerate\Outputs\Output;
-use NikitaSergeev\StructureGenerate\Parsers\ParserStructure;
-use NikitaSergeev\StructureGenerate\Schemes\Schema;
+use  SchemaGenerate\StructureGenerate\Data\Data;
+use  SchemaGenerate\StructureGenerate\Outputs\Output;
+use  SchemaGenerate\StructureGenerate\Parsers\ParserStructure;
+use  SchemaGenerate\StructureGenerate\Schemes\Schema;
 
 interface Generator
 {

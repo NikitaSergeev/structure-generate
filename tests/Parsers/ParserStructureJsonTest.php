@@ -3,7 +3,7 @@
 namespace Tests\Parsers;
 
 use Faker\Generator;
-use NikitaSergeev\StructureGenerate\Parsers\ParserStructureJson;
+use  SchemaGenerate\StructureGenerate\Parsers\ParserStructureJson;
 use Tests\TestCase;
 
 class ParserStructureJsonTest extends TestCase
