@@ -2,7 +2,7 @@
 
 namespace Tests\Schemes;
 
-use SchemaGenerate\StructureGenerate\Schemes\SchemaJson;
+use NikitaSergeev\StructureGenerate\Schemes\SchemaJson;
 use Tests\TestCase;
 
 class SchemaJsonTest extends TestCase

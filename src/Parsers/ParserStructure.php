@@ -1,6 +1,6 @@
 <?php
 
-namespace SchemaGenerate\StructureGenerate\Parsers;
+namespace NikitaSergeev\StructureGenerate\Parsers;
 
 interface ParserStructure
 {

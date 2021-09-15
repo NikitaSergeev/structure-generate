@@ -2,8 +2,8 @@
 
 namespace Tests\Outputs;
 
-use SchemaGenerate\StructureGenerate\Data\GenerateData;
-use SchemaGenerate\StructureGenerate\Outputs\OutputRaw;
+use NikitaSergeev\StructureGenerate\Data\GenerateData;
+use NikitaSergeev\StructureGenerate\Outputs\OutputRaw;
 use Tests\TestCase;
 
 class OutputRawTest extends TestCase

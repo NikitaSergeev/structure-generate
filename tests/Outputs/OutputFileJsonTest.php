@@ -2,8 +2,8 @@
 
 namespace Tests\Outputs;
 
-use SchemaGenerate\StructureGenerate\Data\GenerateData;
-use SchemaGenerate\StructureGenerate\Outputs\OutputFileJson;
+use NikitaSergeev\StructureGenerate\Data\GenerateData;
+use NikitaSergeev\StructureGenerate\Outputs\OutputFileJson;
 use Tests\TestCase;
 
 class OutputFileJsonTest extends TestCase

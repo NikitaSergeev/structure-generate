@@ -1,8 +1,8 @@
 <?php
 
-namespace SchemaGenerate\StructureGenerate\Outputs;
+namespace NikitaSergeev\StructureGenerate\Outputs;
 
-use SchemaGenerate\StructureGenerate\Data\GenerateData;
+use NikitaSergeev\StructureGenerate\Data\GenerateData;
 
 interface Output
 {

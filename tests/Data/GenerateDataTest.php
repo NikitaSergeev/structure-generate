@@ -2,7 +2,7 @@
 
 namespace Tests\Data;
 
-use SchemaGenerate\StructureGenerate\Data\GenerateData;
+use NikitaSergeev\StructureGenerate\Data\GenerateData;
 use Tests\TestCase;
 
 class GenerateDataTest extends TestCase

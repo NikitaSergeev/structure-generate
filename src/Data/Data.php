@@ -1,6 +1,6 @@
 <?php
 
-namespace SchemaGenerate\StructureGenerate\Data;
+namespace NikitaSergeev\StructureGenerate\Data;
 
 interface Data
 {

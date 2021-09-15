@@ -1,6 +1,6 @@
 <?php
 
-namespace SchemaGenerate\StructureGenerate\Schemes;
+namespace NikitaSergeev\StructureGenerate\Schemes;
 
 interface Schema
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace SchemaGenerate\StructureGenerate\Outputs;
+namespace NikitaSergeev\StructureGenerate\Outputs;
 
 class OutputRaw extends OutputAbstract
 {

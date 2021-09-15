@@ -2,11 +2,11 @@
 
 namespace Tests\Generators;
 
-use SchemaGenerate\StructureGenerate\Data\GenerateData;
-use SchemaGenerate\StructureGenerate\Generators\GeneratorService;
-use SchemaGenerate\StructureGenerate\Outputs\Output;
-use SchemaGenerate\StructureGenerate\Parsers\ParserStructure;
-use SchemaGenerate\StructureGenerate\Schemes\Schema;
+use NikitaSergeev\StructureGenerate\Data\GenerateData;
+use NikitaSergeev\StructureGenerate\Generators\GeneratorService;
+use NikitaSergeev\StructureGenerate\Outputs\Output;
+use NikitaSergeev\StructureGenerate\Parsers\ParserStructure;
+use NikitaSergeev\StructureGenerate\Schemes\Schema;
 use Tests\TestCase;
 
 class GeneratorServiceTest extends TestCase
