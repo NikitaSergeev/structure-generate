@@ -9,11 +9,19 @@ class GenerateData implements Data
      */
     private $data = [];
 
+    /**
+     * @param string $keySchema
+     * @param array $data
+     */
     public function set(string $keySchema, array $data): void
     {
         $this->data[$keySchema][] = $data;
     }
 
+    /**
+     * @param string|null $key
+     * @return array
+     */
     public function get(string $key = null): array
     {
         return $this->data[$key] ?? $this->data;

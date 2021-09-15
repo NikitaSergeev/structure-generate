@@ -6,9 +6,9 @@ class SchemaJson implements Schema
 {
     private array $data;
 
-    public function setData(array $json): Schema
+    public function setData(array $data): Schema
     {
-        $this->data = $json;
+        $this->data = $data;
         return $this;
     }
 

@@ -1,15 +1,28 @@
 {
-    "name": "schema-generate/structure-generate",
-    "autoload": {
-        "psr-4": {
-            "SchemaGenerate\\StructureGenerate\\": "src/"
-        }
-    },
-    "authors": [
-        {
-            "name": "Nikita Sergeev",
-            "email": "scorp4646@yandex.ru"
-        }
-    ],
-    "require": {}
+  "name": "schema-generate/structure-generate",
+  "autoload": {
+    "psr-4": {
+      "SchemaGenerate\\StructureGenerate\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "classmap": [
+      "tests/"
+    ]
+  },
+  "authors": [
+    {
+      "name": "Nikita Sergeev",
+      "email": "scorp4646@yandex.ru"
+    }
+  ],
+  "require": {
+    "fakerphp/faker": "^1.9.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5"
+  },
+  "scripts": {
+    "test": "phpunit"
+  }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace SchemaGenerate\StructureGenerate\Services;
+namespace SchemaGenerate\StructureGenerate\Generators;
 
 use SchemaGenerate\StructureGenerate\Data\Data;
 use SchemaGenerate\StructureGenerate\Data\GenerateData;
@@ -9,7 +9,7 @@ use SchemaGenerate\StructureGenerate\Outputs\OutputRaw;
 use SchemaGenerate\StructureGenerate\Parsers\ParserStructure;
 use SchemaGenerate\StructureGenerate\Schemes\Schema;
 
-class GenerateService implements Generate
+class GeneratorService implements Generator
 {
     /**
      * @var ParserStructure
@@ -38,19 +38,19 @@ class GenerateService implements Generate
         $this->setGenerateData($generateData ?? new GenerateData());
     }
 
-    public function setParserStructure(ParserStructure $parserStructure): Generate
+    public function setParserStructure(ParserStructure $parserStructure): Generator
     {
         $this->parserStructure = $parserStructure;
         return $this;
     }
 
-    public function setOutput(Output $output): Generate
+    public function setOutput(Output $output): Generator
     {
         $this->output = $output;
         return $this;
     }
 
-    public function setGenerateData(Data $generateData): Generate
+    public function setGenerateData(Data $generateData): Generator
     {
         $this->generateData = $generateData;
         return $this;
@@ -61,7 +61,10 @@ class GenerateService implements Generate
         foreach ($schemaStructure->getSchema() as $keySchema => $schema) {
             $this->parserStructure->setSchema($schema);
             for ($i = 0; $i < $schemaStructure->getSettingCount($keySchema); $i++) {
-                $this->generateData->set($keySchema, $this->parserStructure->process($this->keysIndex));
+                $this->generateData->set(
+                    $keySchema,
+                    $this->parserStructure->process($this->keysIndex)
+                );
             }
 
             if ($schemaStructure->isKey($keySchema)) {
@@ -70,8 +73,8 @@ class GenerateService implements Generate
                     $schemaStructure->getKey($keySchema)
                 );
             }
-
         }
+
         return $this->output->setData($this->generateData)
             ->setSettings($schemaStructure->getSettingOutput())
             ->process();

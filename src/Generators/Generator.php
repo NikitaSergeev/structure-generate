@@ -1,13 +1,13 @@
 <?php
 
-namespace SchemaGenerate\StructureGenerate\Services;
+namespace SchemaGenerate\StructureGenerate\Generators;
 
 use SchemaGenerate\StructureGenerate\Data\Data;
 use SchemaGenerate\StructureGenerate\Outputs\Output;
 use SchemaGenerate\StructureGenerate\Parsers\ParserStructure;
 use SchemaGenerate\StructureGenerate\Schemes\Schema;
 
-interface Generate
+interface Generator
 {
     /**
      * @param ParserStructure $parserStructure

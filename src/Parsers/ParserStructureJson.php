@@ -31,14 +31,14 @@ class ParserStructureJson implements ParserStructure
     {
         $el = [];
         foreach ($this->schema as $key => $value) {
-            if (preg_match('/\{.+\}/', $value)) {
-                if (preg_match('/\{data\.(.+)\}/s', $value, $matches)) {
+            if (preg_match('/{.+}/', $value)) {
+                if (preg_match('/{data\.(.+)}/s', $value, $matches)) {
                     $el[$key] = $this->faker->randomElement($keysIndex[$matches[1]]);
                     continue;
                 }
 
                 $method = str_replace(['{', '}'], '', $value);
-                $re = '/\{(.*)\((.*)\)\}/s';
+                $re = '/{(.*)\((.*)\)}/s';
                 $str = $value;
 
                 preg_match_all($re, $str, $matches, PREG_SET_ORDER);

@@ -5,10 +5,10 @@ namespace SchemaGenerate\StructureGenerate\Schemes;
 interface Schema
 {
     /**
-     * @param array $json
+     * @param array $data
      * @return $this
      */
-    public function setData(array $json): self;
+    public function setData(array $data): self;
 
     /**
      * @return array
