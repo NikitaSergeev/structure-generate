@@ -1,0 +1,32 @@
+{
+  "settings": {
+    "counts": {
+      "products": 10000
+    },
+    "output": {
+      "products": "/tmp/products.json"
+    }
+  },
+  "keys": {
+    "products": "guid",
+    "categories": "guid"
+  },
+  "schema": {
+    "categories": {
+      "guid": "{uuid}",
+      "name": "{word}"
+    },
+    "products": {
+      "guid": "{uuid}",
+      "category_guid": "{data.categories}",
+      "sku": "{word}",
+      "name": "{name}",
+      "packing": "{word}",
+      "link_image": "{randomElement([[\"http://nginx/uploads/image-1.jpg\",\"http://nginx/uploads/image-2.jpg\",\"http://nginx/uploads/image-3.jpg\"]])}",
+      "count_packing": "{randomNumber([1])}",
+      "unit": "{word}",
+      "stock": "{randomNumber([1])}",
+      "is_deleted": false
+    }
+  }
+}
