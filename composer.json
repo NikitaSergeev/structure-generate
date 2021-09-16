@@ -1,9 +1,9 @@
 {
   "name": "nikitasergeev/structure-generate",
   "autoload": {
-    "classmap": [
-      "src/"
-    ]
+    "psr-4": {
+      "SchemaGenerate\\StructureGenerate\\" : "src/"
+    }
   },
   "autoload-dev": {
     "classmap": [
