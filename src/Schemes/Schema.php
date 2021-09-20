@@ -35,9 +35,9 @@ interface Schema
 
     /**
      * @param mixed $keySchema
-     * @return mixed
+     * @return array
      */
-    public function getKey($keySchema): mixed;
+    public function getKey($keySchema): array;
 
     /**
      * @return array
