@@ -32,7 +32,7 @@ class SchemaJson implements Schema
         return isset($this->data['keys'][$keySchema]);
     }
 
-    public function getKey($keySchema): mixed
+    public function getKey($keySchema): array
     {
         return $this->data['keys'][$keySchema];
     }
