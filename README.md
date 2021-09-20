@@ -1,5 +1,8 @@
 ## Генерирует связанные данные
 
+[![PHP Composer](https://github.com/NikitaSergeev/structure-generate/actions/workflows/php.yml/badge.svg)](https://github.com/NikitaSergeev/structure-generate/actions/workflows/php.yml)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/NikitaSergeev/structure-generate/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/NikitaSergeev/structure-generate/?branch=main)
+
 Генерирует рандомные данные из шаблона
 
 ## Установка
