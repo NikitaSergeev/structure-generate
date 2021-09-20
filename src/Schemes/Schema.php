@@ -22,22 +22,22 @@ interface Schema
 
     /**
      * @param int|string $keySchema
-     * @param int $default
+     * @param mixed $default
      * @return int
      */
-    public function getSettingCount(int|string $keySchema, int $default = 1): int;
+    public function getSettingCount($keySchema, int $default = 1): int;
 
     /**
-     * @param int|string $keySchema
+     * @param mixed $keySchema
      * @return bool
      */
-    public function isKey(int|string $keySchema): bool;
+    public function isKey($keySchema): bool;
 
     /**
-     * @param int|string $keySchema
+     * @param mixed $keySchema
      * @return mixed
      */
-    public function getKey(int|string $keySchema): mixed;
+    public function getKey($keySchema): mixed;
 
     /**
      * @return array
