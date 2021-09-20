@@ -22,17 +22,17 @@ class SchemaJson implements Schema
         return $this->data['schema'];
     }
 
-    public function getSettingCount(int|string $keySchema, int $default = 1): int
+    public function getSettingCount($keySchema, int $default = 1): int
     {
         return $this->data['settings']['counts'][$keySchema] ?? $default;
     }
 
-    public function isKey(int|string $keySchema): bool
+    public function isKey($keySchema): bool
     {
         return isset($this->data['keys'][$keySchema]);
     }
 
-    public function getKey(int|string $keySchema): mixed
+    public function getKey($keySchema): mixed
     {
         return $this->data['keys'][$keySchema];
     }
