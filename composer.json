@@ -17,6 +17,7 @@
     }
   ],
   "require": {
+    "php": ">=7.4",
     "fakerphp/faker": "^1.9.1",
     "ext-zip": "*"
   },
