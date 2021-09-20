@@ -1,6 +1,7 @@
 {
   "name": "nikitasergeev/structure-generate",
   "description": "Generates related data",
+   "license" : "MIT",
   "authors": [
     {
       "name": "Nikita Sergeev",
